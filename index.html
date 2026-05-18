@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Pot Express</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__left">
+                <img src="./img/Logo.svg" class="logo">
+                <a href="#footer"><span class="address">Улица Пушкина, 11</span></a>
+            </div>
+            <div class="header__right">
+                <div class="header__info">
+                    <a href="tel: 71231231231"><span>+71231231231</span></a>
+                    <span>11:00–23:00</span>
+                </div>
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MENU -->
+    <div class="mobile-menu" id="menu">
+        <a href="#background">Главная</a>
+        <a href="#how-work">Как это работает</a>
+        <a href="#assortment">Ассортимент</a>
+        <a href="#bonus">Бонусная карта</a>
+        <a href="#footer">Где мы?</a>
+    </div>
+
+    <!-- SECTION -->
+    <section id="background" class="background-main">
+        <div class="content">
+            <h1>
+                СОБЕРИ СВОЙ <br>
+                <span>РАМЕН</span> САМ
+            </h1>
+            <p>
+                Выбирай лапшу, добавляй топпинги
+                и готовь прямо на месте
+            </p>
+            <div class="buttons">
+                <a href="#assortment"><button class="btn primary">Ассортимент</button></a>
+                <a href="#how-work"><button class="btn secondary">Как это работает?</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-work" class="how-work">
+        <div class="how-work__container">
+            <h2 class="how-work__title">
+                КАК ЭТО <span>РАБОТАЕТ?</span>
+            </h2>
+            <div class="how-work__image">
+                <img src="./img/howCoock.svg" alt="Этапы приготовления">
+            </div>
+        </div>
+    </section>
+
+    <section id="assortment" class="assortment">
+        <div class="assortment__container">
+            <h2 class="assortment__title">
+                НАШ <span>АССОРТИМЕНТ</span>
+            </h2>
+            <div class="assortment__grid">
+                <!-- 1 -->
+                <div class="assortment__item">
+                    <img src="./img/Snacks.svg" alt="Закуски">
+                    <a href="./PDF/Menu.pdf" target="_blank" rel="noopener noreferrer"><button class="assortment__btn pink">ЗАКУСКИ</button></a>
+                </div>
+                <!-- 2 -->
+                <div class="assortment__item">
+                    <img src="./img/Ramens.svg" alt="Рамены">
+                    <a href="./PDF/Menu.pdf" target="_blank" rel="noopener noreferrer"><button class="assortment__btn outline">РАМЕНЫ</button></a>
+                </div>
+                <!-- 3 -->
+                <div class="assortment__item">
+                    <img src="./img/Drinks.svg" alt="Напитки">
+                    <a href="./PDF/Menu.pdf" target="_blank" rel="noopener noreferrer"><button class="assortment__btn pink">НАПИТКИ</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bonus" id="bonus">
+        <div class="bonus__container">
+            <h2 class="bonus__title">Бонусная карта</h2>
+            <div class="bonus__top">
+                <div class="bonus__image">
+
+                    <img src="./img/Card.svg" alt="Бонусная карта">
+
+                    <div class="bonus__info">
+                        <h3>Для самых <span>преданных</span></h3>
+                        <p>
+                            Карта позволяет накапливать баллы за покупки и тратить их на оплату до 100% чека. Доступна в
+                            виртуальном или физическом виде с уникальным номером для быстрого сканирования. Сделайте
+                            визиты выгоднее и удобнее!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- БОНУСЫ -->
+            <h3 class="bonus__subtitle">Дополнительные <span>бонусы</span></h3>
+            <div class="bonus__cards">
+                <div class="bonus__card">
+                    <img src="./img/Reg.svg">
+                    <p>250 бонусов за регистрацию</p>
+                </div>
+                <div class="bonus__card">
+                    <img src="./img/Present.svg">
+                    <p>500 бонусов в день рождения</p>
+                </div>
+                <div class="bonus__card">
+                    <img src="./img/Add.svg">
+                    <p>100 бонусов за приглашение друга</p>
+                </div>
+            </div>
+            <!-- ФОРМА -->
+            <form class="bonus__form" id="bonusForm">
+                <div class="form__row">
+                    <div class="form__group">
+                        <label>Ваше имя</label>
+                        <input type="text" id="name" placeholder="Имя">
+                    </div>
+
+                    <div class="form__group">
+                        <label>Телефон</label>
+                        <input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+                    </div>
+
+                    <div class="form__group">
+                        <label>Дата рождения</label>
+                        <input type="date" id="date">
+                    </div>
+                </div>
+                <button type="submit">Получить карту</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+    <div class="footer__container">
+
+        <!-- ЛЕВАЯ ЧАСТЬ -->
+        <div class="footer__info" id="footer">
+
+            <div class="footer__row">
+                <img src="./img/geo.svg" alt="">
+                <a href="https://yandex.ru/maps/-/CPW6JMYE"><span>ул. Пушкина, 11</span></a>
+            </div>
+
+            <div class="footer__row">
+                <img src="./img/time.svg" alt="">
+                <span>с 11:00 до 23:00</span>
+            </div>
+
+            <div class="footer__socials">
+                <a href="#background"><img src="./img/logo.svg" class="footer__logo"></a>
+
+                <a href="#"><img src="./img/tg.svg" alt=""></a>
+                <a href="#"><img src="./img/vk.svg" alt=""></a>
+            </div>
+
+        </div>
+
+        <!-- КАРТА -->
+        <div class="footer__map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A770739fa96de2a0586a35fdeb8083f7faa6874fc15be655804c2cc57f8488543&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        </div>
+
+    </div>
+
+</footer>
+<div id="toast-container"></div>
+<div class="overlay" id="overlay"></div>
+</body>
+</html>
